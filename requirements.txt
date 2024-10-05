@@ -1,5 +1,5 @@
 click==7.1.2
-Flask==1.1.2
+Flask==2.2.5
 Flask-Login==0.4.1
 Flask-SocketIO==3.3.2
 Flask-WTF==0.14.2
@@ -13,5 +13,5 @@ MarkupSafe==1.1.1
 Werkzeug==3.0.3
 MarkupSafe==1.1.1
 passlib==1.7.1
-python-engineio==3.8.2.post1
+python-engineio==4.9.1
 python-socketio==3.1.2
