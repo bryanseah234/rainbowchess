@@ -1,58 +1,70 @@
-# Skittles ChessApp
-A repository for a chess app in Python (NYJC J1 Computing Assignment 13)
+# Rainbow Chess
 
-## Disclaimer:
-1. NONE
+A web-based chess game with a colorful rainbow-cycling background.
 
-## Demo:
-http://skittles-chessapp.herokuapp.com/
+## Description
 
-## Team members:
-1. Vina
-2. Bryan
-3. David
+Rainbow Chess (also known as Skittles Chess Game) is a two-player chess game built with Python and Flask. It features a fully functional chess board with move validation, pawn promotion, and an undo feature that allows players to revert up to 10 moves. The game showcases a visually appealing interface with a rainbow color-cycling background effect.
 
-## Project objective:
-To implement a web app that can:
+## Features
 
-1. display a chess board
-2. validate and process the user's move
+- Interactive chess board with Unicode chess piece symbols
+- Move validation for all chess pieces (King, Queen, Rook, Bishop, Knight, Pawn)
+- Pawn promotion to Queen, Rook, Bishop, or Knight
+- Undo functionality with a circular stack that stores up to 10 moves
+- Rainbow color-cycling background animation
+- Responsive web interface
 
-## Submission:
-Each group is to submit:
+## Technologies Used
 
-1. A repl link to a working web app,
-2. An individual video (not more than 5 min) explaining how the following features were applied:
-- main game features
-- undo feature (Move History)
+- Python 3.8
+- Flask (web framework)
+- Jinja2 (templating engine)
+- HTML/CSS/JavaScript
+- Gunicorn (WSGI HTTP Server)
 
-## Grading criteria:
-Each criteria is assigned a score of 0-2 depending on how well the requirements were met.
+## Installation
 
-For web app repl:
+```bash
+# Clone the repository
+git clone https://github.com/bryanseah234/rainbowchess.git
 
-0 marks: feature was not functional enough to be tested properly
-1 mark: feature works most of the time
-2 marks: feature works fully
-For individual video:
+# Navigate to project directory
+cd rainbowchess
 
-0 marks: Difficult to understand explanation
-1 mark: Sensible explanation with key terms mostly used correctly
-2 marks: Clear explanation with key terms used correctly
-Game functionality [total 6 marks]
+# Install dependencies
+pip install -r requirements.txt
+```
 
-0-2 marks: Able to handle legal & illegal moves without error page
-0-2 marks: UI is correctly updated
-0-2 marks: Undo feature is functional
-Explanation of how main game events are handled [total 6 marks]
+## Usage
 
-0-2 marks: Demonstrated clear understanding of how GET and POST requests work
-0-2 marks: Demonstrated clear understanding of how Flask handles requests and data
-0-2 marks: Demonstrated clear understanding of the game flow, and how player routing happens
-Explanation of how Move History works [total 6 marks]
+```bash
+# Run the application
+python main.py
+```
 
-0-2 marks: Demonstrated clear understanding of how a CircularStack works
-0-2 marks: Demonstrated clear understanding of how Move is handled in the game
-0-2 marks: Demonstrated clear understanding of how the move history is used in the game flow
+The game will start on `http://localhost:5000`. Open your browser and navigate to this address to play.
 
-[![Run on Repl.it](https://repl.it/badge/github/bryanseah234/ChessApp)](https://repl.it/github/bryanseah234/ChessApp)
+### How to Play
+
+1. Click "START" to begin a new game
+2. Enter moves in the format `XY XY` (e.g., `01 03` to move a piece from column 0, row 1 to column 0, row 3)
+3. Coordinates are 0-7 for both columns and rows
+4. Use the "UNDO" button to revert moves if needed
+
+## Demo
+
+The game was originally hosted at: http://skittles-chessapp.herokuapp.com/
+
+## Disclaimer
+
+1. FOR EDUCATIONAL PURPOSES ONLY
+2. USE AT YOUR OWN DISCRETION
+
+## License
+
+MIT License
+
+---
+
+**Author:** <a href="https://github.com/bryanseah234">bryanseah234</a>
