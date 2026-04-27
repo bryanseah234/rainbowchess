@@ -25,6 +25,17 @@ files = [
 ]
 
 [[package]]
+name = "chess"
+version = "1.11.2"
+description = "A chess library with move generation and validation, Polyglot opening book probing, PGN reading and writing, Gaviota tablebase probing, Syzygy tablebase probing, and XBoard/UCI engine communication."
+optional = false
+python-versions = ">=3.8"
+groups = ["main"]
+files = [
+    {file = "chess-1.11.2.tar.gz", hash = "sha256:a8b43e5678fdb3000695bdaa573117ad683761e5ca38e591c4826eba6d25bb39"},
+]
+
+[[package]]
 name = "click"
 version = "8.1.7"
 description = "Composable command line interface toolkit"
@@ -251,15 +262,18 @@ files = [
 
 [[package]]
 name = "python-chess"
-version = "0.31.4"
-description = "A pure Python chess library with move generation and validation, Polyglot opening book probing, PGN reading and writing, Gaviota tablebase probing, Syzygy tablebase probing and XBoard/UCI engine communication."
+version = "1.999"
+description = "A chess library with move generation, move validation, and support for common formats."
 optional = false
-python-versions = ">=3.6"
+python-versions = "*"
 groups = ["main"]
 files = [
-    {file = "python-chess-0.31.4.tar.gz", hash = "sha256:1fb46b9fd7919332fcfe34df7284e58e9adb9579ef44f26ed9e3343ce9b30d07"},
-    {file = "python_chess-0.31.4-py3-none-any.whl", hash = "sha256:ce9e88e82cf9dcf131b44a04ee8be4891b411e2fee54f5389df27289dae32be4"},
+    {file = "python-chess-1.999.tar.gz", hash = "sha256:8cad0388c42242d890ac6368ad64def15cd0165db033df0ad479492e266e5e6c"},
+    {file = "python_chess-1.999-py3-none-any.whl", hash = "sha256:93b562f8f1124cb7bf56fb095e18743758e69dc6a028ccda0badcaa5c59d88c8"},
 ]
+
+[package.dependencies]
+chess = ">=1,<2"
 
 [[package]]
 name = "python-engineio"
@@ -380,4 +394,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.8"
-content-hash = "57477a1ed5d86fde75035a31a79246c59808667e798935785cdae46eaa88c5b8"
+content-hash = "83258ae368e334bfddf53e246333086ad873bf31d2b58ade0a19d48e09f81f77"
