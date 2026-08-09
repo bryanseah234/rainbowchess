@@ -27,7 +27,7 @@ Rainbow Chess (also known as Skittles Chess Game) is a two-player chess game bui
 
 ```bash
 # Clone the repository
-git clone https://github.com/bryanseah234/rainbowchess.git
+git clone https://github.com/theprawnorganisation/rainbowchess.git
 
 # Navigate to project directory
 cd rainbowchess
@@ -63,8 +63,4 @@ The game was originally hosted at: http://skittles-chessapp.herokuapp.com/
 
 ## License
 
-MIT License
-
----
-
-**Author:** <a href="https://github.com/bryanseah234">bryanseah234</a>
+Apache-2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
