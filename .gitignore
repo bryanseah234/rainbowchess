@@ -153,3 +153,6 @@ dmypy.json
 !.env.sample
 !.sourcery.yml
 !.deepsource.toml
+.env.*
+node_modules/
+.next/
