@@ -1,5 +1,10 @@
 # Rainbow Chess
 
+Live demo: https://hongyime.github.io/rainbowchess/
+
+![Project screenshot](./screenshot.png)
+
+
 A web-based chess game with a colorful rainbow-cycling background.
 
 ## Description
